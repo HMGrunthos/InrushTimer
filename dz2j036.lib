@@ -1,0 +1,36 @@
+Spice Parameter
+Semiconductor Company, Panasonic Corporation
+Product No. DZ2J036
+Device Type : Zener Diode
+Date : 2009/09/28
+
+*DEVICE=DZ2J036,D
+* DZ2J036 D model
+*$
+.SUBCKT DZ2J036 A K
+D1 A K DF
+DZ K 1 DR
+V1 1 A 0.002
+.MODEL DF D
++ IS=1.1088E-15
++ N=1.0540
++ RS=0.13093
++ IKF=0.22142
++ CJO=44.714E-12
++ M=0.53585
++ VJ=1.3823
++ BV=4.0
++ IBV=0.005
++ NBV=6
++ TBV1=0.2u
++ EG=1.11
+.MODEL DR D 
++ IS=615.22E-12
++ N=6.3973
++ RS=43.093
++ IKF=18.567E-6
++ XTI=25
++ EG=1.11
+.ENDS
+*$
+*Applicable at 25 degree celsius only
