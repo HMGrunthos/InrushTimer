@@ -352,7 +352,7 @@ UsedLibrary="/home/sam/Documents/eagle/lbr/SHoleLib.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="56 338 1343 895"
+Loc="0 32 1312 679"
 State=2
 Number=0
 
