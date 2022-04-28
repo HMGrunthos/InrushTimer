@@ -18949,7 +18949,7 @@ grid 2.54 mm</description>
 </class>
 </classes>
 <parts>
-<part name="C1" library="rcl" deviceset="C-EU" device="225-062X268" value="220nF"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="225-108X268" value="470nF"/>
 <part name="F1" library="fuse" deviceset="SHKOG" device=""/>
 <part name="R1" library="varistor" deviceset="S10K320" device=""/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="0617/22" value="100R"/>
