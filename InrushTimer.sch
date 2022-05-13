@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -19122,7 +19122,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="X6" library="con-wago-500" deviceset="W237-102" device=""/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0805K" value="1nF"/>
 <part name="C14" library="rcl" deviceset="C-EU" device="050-024X044" value="10nF"/>
-<part name="C16" library="rcl" deviceset="C-EU" device="050-024X044" value="10nF"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0805K" value="1nF"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C1206K" value="100nF"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0207/2V" value="100K"/>
@@ -19159,6 +19158,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R16" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="0207/2V" value="100"/>
 </parts>
 <sheets>
 <sheet>
@@ -19209,7 +19209,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="X6" gate="-2" x="535.94" y="25.4" rot="R180"/>
 <instance part="C9" gate="G$1" x="78.74" y="116.84" rot="R180"/>
 <instance part="C14" gate="G$1" x="7.62" y="-15.24"/>
-<instance part="C16" gate="G$1" x="68.58" y="-27.94"/>
 <instance part="C10" gate="G$1" x="119.38" y="129.54" rot="R90"/>
 <instance part="C1" gate="G$1" x="127" y="162.56"/>
 <instance part="R1" gate="G$1" x="233.68" y="-35.56" rot="R180"/>
@@ -19272,6 +19271,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="R16" gate="G$1" x="388.62" y="10.16" rot="R180"/>
 <instance part="R3" gate="G$1" x="388.62" y="12.7" rot="R180"/>
 <instance part="R5" gate="G$1" x="388.62" y="7.62" rot="R180"/>
+<instance part="R18" gate="G$1" x="71.12" y="-20.32" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -19453,10 +19453,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="106.68" y1="-22.86" x2="106.68" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="-40.64" x2="78.74" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="78.74" y="-40.64"/>
-<wire x1="78.74" y1="-40.64" x2="68.58" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="A"/>
-<pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="-33.02" x2="68.58" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="D12" gate="1" pin="A"/>
 <wire x1="-12.7" y1="-30.48" x2="-25.4" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="-30.48" x2="-12.7" y2="-20.32" width="0.1524" layer="91"/>
@@ -19467,9 +19464,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="7.62" y1="-30.48" x2="-2.54" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="-30.48" x2="-12.7" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-30.48" x2="17.78" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-40.64" x2="17.78" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-40.64" x2="17.78" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="-40.64" x2="17.78" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="68.58" y="-40.64"/>
 <junction x="17.78" y="-30.48"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="-27.94" x2="17.78" y2="-30.48" width="0.1524" layer="91"/>
@@ -19621,7 +19617,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </segment>
 <segment>
 <wire x1="200.66" y1="137.16" x2="187.96" y2="137.16" width="0.1524" layer="91"/>
-<label x="200.66" y="139.7" size="1.778" layer="95" rot="R180"/>
+<label x="226.06" y="139.7" size="1.778" layer="95" rot="R180"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="132.08" x2="187.96" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="1"/>
@@ -19634,6 +19630,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="IC2" gate="A" pin="OUT"/>
 <wire x1="187.96" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
 <junction x="187.96" y="137.16"/>
+<wire x1="200.66" y1="137.16" x2="226.06" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -19678,24 +19675,20 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="IC6" gate="A" pin="R"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="VOUT"/>
 <pinref part="U$13" gate="G$1" pin="G"/>
-<wire x1="63.5" y1="-20.32" x2="68.58" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-20.32" x2="78.74" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="-20.32" x2="88.9" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="-20.32" x2="101.6" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="-27.94" x2="78.74" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="78.74" y="-20.32"/>
 <pinref part="D1" gate="1" pin="C"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="-25.4" x2="68.58" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="68.58" y="-20.32"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="-7.62" x2="78.74" y2="-20.32" width="0.1524" layer="91"/>
 <label x="101.6" y="-27.94" size="1.778" layer="95" rot="R180"/>
 <wire x1="88.9" y1="-20.32" x2="88.9" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="88.9" y="-20.32"/>
 <wire x1="88.9" y1="-30.48" x2="101.6" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="-20.32" x2="76.2" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="HYST" class="0">
@@ -20063,6 +20056,13 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="IC3" gate="A" pin="Q0"/>
 <wire x1="383.54" y1="12.7" x2="381" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="U$4" gate="G$1" pin="VOUT"/>
+<wire x1="66.04" y1="-20.32" x2="63.5" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
