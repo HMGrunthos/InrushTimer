@@ -17574,7 +17574,7 @@ grid 2.54 mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FODM3053">
+<deviceset name="FODM3053" prefix="OP">
 <gates>
 <gate name="G$1" symbol="FODM30*" x="0" y="0"/>
 </gates>
@@ -19115,7 +19115,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="IC2" library="linear" deviceset="TLC272" device="D" value="TLC272D"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="050-024X044" value="100nF"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C1206K" value="100nF"/>
-<part name="U$5" library="SHoleLib" deviceset="FODM3053" device=""/>
 <part name="Q2" library="transistor-power" deviceset="TIP41C" device=""/>
 <part name="R17" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="X6" library="con-wago-500" deviceset="W237-102" device=""/>
@@ -19130,7 +19129,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R8" library="rcl" deviceset="R-EU_" device="0207/2V" value="1K"/>
 <part name="R24" library="rcl" deviceset="R-EU_" device="0207/7" value="51K"/>
 <part name="C11" library="rcl" deviceset="C-EU" device="050-024X044" value="100nF"/>
-<part name="U$8" library="SHoleLib" deviceset="FODM3053" device=""/>
 <part name="R25" library="pot" deviceset="TRIM_EU-" device="CA6H_MOD" value="220K"/>
 <part name="X3" library="con-wago-500" deviceset="W237-102" device=""/>
 <part name="C12" library="rcl" deviceset="C-EU" device="050-024X044" value="10nF"/>
@@ -19147,7 +19145,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="SJ2" library="jumper" deviceset="SJ" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="050-024X044" value="100nF"/>
 <part name="IC6" library="linear" deviceset="*555" device=""/>
-<part name="U$9" library="SHoleLib" deviceset="FODM3053" device=""/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0805K" value="1nF"/>
 <part name="T2" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBTA42LT1"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
@@ -19159,6 +19156,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R5" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
 <part name="R18" library="rcl" deviceset="R-EU_" device="0207/2V" value="100R"/>
 <part name="R20" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
+<part name="OP1" library="SHoleLib" deviceset="FODM3053" device=""/>
+<part name="OP2" library="SHoleLib" deviceset="FODM3053" device=""/>
+<part name="OP3" library="SHoleLib" deviceset="FODM3053" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19201,7 +19201,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="IC2" gate="P" x="116.84" y="162.56"/>
 <instance part="C4" gate="G$1" x="78.74" y="40.64"/>
 <instance part="C13" gate="G$1" x="132.08" y="106.68"/>
-<instance part="U$5" gate="G$1" x="518.16" y="27.94"/>
 <instance part="Q2" gate="1" x="83.82" y="50.8"/>
 <instance part="R17" gate="G$1" x="502.92" y="-7.62" rot="R270"/>
 <instance part="X6" gate="-1" x="535.94" y="30.48" rot="R180"/>
@@ -19223,7 +19222,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="R8" gate="G$1" x="274.32" y="-25.4" rot="R90"/>
 <instance part="R24" gate="G$1" x="292.1" y="-15.24" rot="R270"/>
 <instance part="C11" gate="G$1" x="226.06" y="-50.8"/>
-<instance part="U$8" gate="G$1" x="518.16" y="-17.78"/>
 <instance part="R25" gate="1" x="248.92" y="-35.56" rot="R90"/>
 <instance part="X3" gate="-1" x="535.94" y="-15.24" rot="R180"/>
 <instance part="X3" gate="-2" x="535.94" y="-20.32" rot="R180"/>
@@ -19257,7 +19255,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="SJ2" gate="1" x="401.32" y="35.56" rot="R180"/>
 <instance part="C3" gate="G$1" x="327.66" y="-10.16"/>
 <instance part="IC6" gate="A" x="210.82" y="-22.86"/>
-<instance part="U$9" gate="G$1" x="518.16" y="2.54"/>
 <instance part="C7" gate="G$1" x="119.38" y="124.46" rot="R90"/>
 <instance part="T2" gate="G$1" x="15.24" y="-5.08" smashed="yes">
 <attribute name="NAME" x="17.78" y="-5.08" size="1.778" layer="95"/>
@@ -19272,6 +19269,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="R5" gate="G$1" x="388.62" y="7.62" rot="R180"/>
 <instance part="R18" gate="G$1" x="71.12" y="-20.32" rot="R180"/>
 <instance part="R20" gate="G$1" x="154.94" y="139.7"/>
+<instance part="OP1" gate="G$1" x="518.16" y="-17.78"/>
+<instance part="OP2" gate="G$1" x="518.16" y="2.54"/>
+<instance part="OP3" gate="G$1" x="518.16" y="27.94"/>
 </instances>
 <busses>
 </busses>
@@ -19401,9 +19401,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="416.56" y1="58.42" x2="416.56" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="A"/>
 <wire x1="508" y1="30.48" x2="482.6" y2="30.48" width="0.1524" layer="91"/>
 <label x="482.6" y="30.48" size="1.778" layer="95"/>
+<pinref part="OP3" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="A" pin="D2"/>
@@ -19411,9 +19411,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="330.2" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="G$1" pin="A"/>
 <wire x1="508" y1="5.08" x2="482.6" y2="5.08" width="0.1524" layer="91"/>
 <label x="482.6" y="5.08" size="1.778" layer="95"/>
+<pinref part="OP2" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="ZERO" class="0">
@@ -19870,9 +19870,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="D10" gate="G$1" pin="C"/>
 <wire x1="490.22" y1="-20.32" x2="477.52" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="490.22" y1="-25.4" x2="490.22" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="C"/>
 <wire x1="490.22" y1="-20.32" x2="508" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="490.22" y="-20.32"/>
+<pinref part="OP1" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -19905,22 +19905,22 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <net name="N$5" class="0">
 <segment>
 <pinref part="X6" gate="-2" pin="KL"/>
-<pinref part="U$5" gate="G$1" pin="A1"/>
 <wire x1="530.86" y1="25.4" x2="528.32" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="OP3" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="X6" gate="-1" pin="KL"/>
-<pinref part="U$5" gate="G$1" pin="A2"/>
 <wire x1="530.86" y1="30.48" x2="528.32" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="OP3" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="C"/>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="508" y1="25.4" x2="502.92" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="OP3" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -19934,45 +19934,45 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="X3" gate="-1" pin="KL"/>
-<pinref part="U$8" gate="G$1" pin="A2"/>
 <wire x1="528.32" y1="-15.24" x2="530.86" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="OP1" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="X3" gate="-2" pin="KL"/>
-<pinref part="U$8" gate="G$1" pin="A1"/>
 <wire x1="528.32" y1="-20.32" x2="530.86" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="OP1" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="A"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="508" y1="-15.24" x2="502.92" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="502.92" y1="-15.24" x2="502.92" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="OP1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="C"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="508" y1="0" x2="502.92" y2="0" width="0.1524" layer="91"/>
 <wire x1="502.92" y1="0" x2="502.92" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="OP2" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="A2"/>
 <pinref part="X5" gate="-2" pin="KL"/>
 <wire x1="530.86" y1="5.08" x2="528.32" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="OP2" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="A1"/>
 <pinref part="X5" gate="-1" pin="KL"/>
 <wire x1="530.86" y1="0" x2="528.32" y2="0" width="0.1524" layer="91"/>
+<pinref part="OP2" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="N$13" class="0">
