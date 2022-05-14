@@ -2042,8 +2042,8 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="D3" library="diode" package="SOD323-R" value="Z12V" x="11.1125" y="17.145" rot="MR90"/>
-<element name="C2" library="rcl" package="E2-5" value="10u" x="6.0325" y="7.62" rot="R180"/>
-<element name="C5" library="rcl" package="E2,5-7" value="100u" x="15.5575" y="21.9075" rot="R135"/>
+<element name="C2" library="rcl" package="E2-5" value="10uF" x="6.0325" y="7.62" rot="R180"/>
+<element name="C5" library="rcl" package="E2,5-7" value="100uF" x="15.5575" y="21.9075" rot="R135"/>
 <element name="R4" library="rcl" package="0207/2V" value="4K7" x="10.16" y="10.16" rot="R225"/>
 <element name="R6" library="rcl" package="0207/2V" value="22K" x="4.7625" y="37.7825" rot="R90"/>
 <element name="D4" library="diode" package="DO41-10" value="1n4001" x="14.2875" y="36.5125" rot="R180"/>
@@ -2060,7 +2060,7 @@ design rules under a new name.</description>
 <element name="R15" library="rcl" package="0207/2V" value="51K" x="20.32" y="17.4625" rot="R45"/>
 <element name="R14" library="rcl" package="0207/2V" value="22K" x="19.05" y="12.065" rot="R270"/>
 <element name="R19" library="rcl" package="0207/2V" value="10K" x="18.7325" y="7.62" rot="R225"/>
-<element name="C15" library="rcl" package="C0805K" value="10p (DNF)" x="13.0175" y="29.36875" rot="R180"/>
+<element name="C15" library="rcl" package="C0805K" value="10pF (DNF)" x="13.0175" y="29.36875" rot="R180"/>
 <element name="U$3" library="transistor-fet" package="SOT23" value="2N7002" x="43.4975" y="8.89" rot="MR90"/>
 <element name="D12" library="diode" package="DO35Z10" value="BZX55" x="14.605" y="4.7625"/>
 <element name="D1" library="diode" package="DO35Z10" value="BZX55" x="24.13" y="7.9375" rot="R270"/>
@@ -2135,7 +2135,7 @@ design rules under a new name.</description>
 <element name="R16" library="rcl" package="0207/2V" value="10K" x="2.54" y="-110.49"/>
 <element name="R3" library="rcl" package="0207/2V" value="10K" x="2.54" y="-124.46"/>
 <element name="R5" library="rcl" package="0207/2V" value="10K" x="2.54" y="-138.43"/>
-<element name="R18" library="rcl" package="0207/2V" value="100" x="2.54" y="-152.4"/>
+<element name="R18" library="rcl" package="0207/2V" value="100R" x="2.54" y="-152.4"/>
 <element name="R20" library="rcl" package="0207/2V" value="10K" x="2.54" y="-166.37"/>
 </elements>
 <signals>

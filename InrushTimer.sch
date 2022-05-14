@@ -19089,8 +19089,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </classes>
 <parts>
 <part name="D3" library="diode" deviceset="DIODE-" device="SOD323-R" value="Z12V"/>
-<part name="C2" library="rcl" deviceset="CPOL-EU" device="E2-5" value="10u"/>
-<part name="C5" library="rcl" deviceset="CPOL-EU" device="E2.5-7" value="100u"/>
+<part name="C2" library="rcl" deviceset="CPOL-EU" device="E2-5" value="10uF"/>
+<part name="C5" library="rcl" deviceset="CPOL-EU" device="E2.5-7" value="100uF"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="0207/2V" value="4K7"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="0207/2V" value="22K"/>
 <part name="D4" library="diode" deviceset="DIODE-" device="DO41-10" value="1n4001"/>
@@ -19107,7 +19107,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R15" library="rcl" deviceset="R-EU_" device="0207/2V" value="51K"/>
 <part name="R14" library="rcl" deviceset="R-EU_" device="0207/2V" value="22K"/>
 <part name="R19" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
-<part name="C15" library="rcl" deviceset="C-EU" device="C0805K" value="10p (DNF)"/>
+<part name="C15" library="rcl" deviceset="C-EU" device="C0805K" value="10pF (DNF)"/>
 <part name="U$3" library="transistor-fet" deviceset="2N7002" device=""/>
 <part name="D12" library="diode" deviceset="BZX55" device=""/>
 <part name="D1" library="diode" deviceset="BZX55" device=""/>
@@ -19157,7 +19157,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R16" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
-<part name="R18" library="rcl" deviceset="R-EU_" device="0207/2V" value="100"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="0207/2V" value="100R"/>
 <part name="R20" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
 </parts>
 <sheets>
