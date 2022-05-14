@@ -351,6 +351,7 @@ UsedLibrary="/home/sam/Documents/eagle/lbr/ROHM_By_element14_Batch_1.lbr"
 UsedLibrary="/home/sam/Documents/eagle/lbr/SHoleLib.lbr"
 UsedLibrary="/home/sam/eagle-7.7.0/lbr/seeed/Seeed-OPL-Transistor.lbr"
 UsedLibrary="/home/sam/Documents/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-DiscreteSemi.lbr"
+UsedLibrary="InrushTimer.lbr"
 
 [Win_1]
 Type="Control Panel"
@@ -364,7 +365,7 @@ Loc="0 32 599 431"
 State=1
 Number=2
 File="InrushTimer.brd"
-View="2.81318 -69.0375 55.9206 80.2863"
+View="-37.5915 -224.893 -22.7702 -183.219"
 WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -410,7 +411,7 @@ Loc="88 120 687 519"
 State=1
 Number=1
 File="InrushTimer.sch"
-View="387.495 -35.2788 585.291 50.2951"
+View="-172.877 -129.177 535.86 177.45"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -449,7 +450,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: 387.495 -35.2788 585.291 50.2951"
+Views=" 1: -172.877 -129.177 535.86 177.45"
 Sheet="1"
 
 [Desktop]
