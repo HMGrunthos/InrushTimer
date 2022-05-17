@@ -2875,7 +2875,7 @@
     (uuid 95f38c41-d1ce-487a-b870-eb7296f9e1b5)
     (property "Reference" "F1" (id 0) (at 48.26 158.75 90))
     (property "Value" "Fuse" (id 1) (at 48.26 161.29 90))
-    (property "Footprint" "FuseHolders:Fuseholder_Clip-5x20mm&6.3x32_Schurter_OG_Lateral_P20.00x5.00mm_D1.3mm_Horizontal" (id 2) (at 48.26 166.878 90)
+    (property "Footprint" "" (id 2) (at 48.26 166.878 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 48.26 165.1 0)
@@ -3343,7 +3343,7 @@
       (reference "D6") (unit 1) (value "Q_SCR_KAG") (footprint "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown")
     )
     (path "/95f38c41-d1ce-487a-b870-eb7296f9e1b5"
-      (reference "F1") (unit 1) (value "Fuse") (footprint "FuseHolders:Fuseholder_Clip-5x20mm&6.3x32_Schurter_OG_Lateral_P20.00x5.00mm_D1.3mm_Horizontal")
+      (reference "F1") (unit 1) (value "Fuse") (footprint "ITFootprints:Fuseholder_Clip-5x20mmOr6.3x32_Schurter_OG_Lateral_P20.00x5.00mm_D1.3mm_Horizontal")
     )
     (path "/9ec871c1-4e05-4164-b89f-2e9855186b95"
       (reference "J1") (unit 1) (value "Screw_Terminal_01x02") (footprint "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm")
