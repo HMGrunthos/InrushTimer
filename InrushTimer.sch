@@ -15064,13 +15064,13 @@ NS Package M08A</description>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 </package>
 <package name="SO08-555">
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="3.25" y1="2.8" x2="3.25" y2="-2" width="0.2032" layer="51"/>
+<wire x1="3.25" y1="-2" x2="3.25" y2="-2.8" width="0.2032" layer="51"/>
+<wire x1="3.25" y1="-2.8" x2="-3.25" y2="-2.8" width="0.2032" layer="51"/>
+<wire x1="-3.25" y1="-2.8" x2="-3.25" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-3.25" y1="-2" x2="-3.25" y2="2.8" width="0.2032" layer="51"/>
+<wire x1="-3.25" y1="2.8" x2="3.25" y2="2.8" width="0.2032" layer="51"/>
+<wire x1="3.25" y1="-2" x2="-3.25" y2="-2" width="0.2032" layer="51"/>
 <smd name="2" x="-0.635" y="-3.7" dx="0.6" dy="1.8" layer="1"/>
 <smd name="7" x="-0.635" y="3.7" dx="0.6" dy="1.8" layer="1"/>
 <smd name="1" x="-1.905" y="-3.7" dx="0.6" dy="1.8" layer="1"/>
@@ -17793,6 +17793,25 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <rectangle x1="0.889" y1="3.2" x2="1.651" y2="3.925" layer="51" rot="R180"/>
 <rectangle x1="-1.651" y1="3.2" x2="-0.889" y2="3.925" layer="51" rot="R180"/>
 </package>
+<package name="TLP26*">
+<wire x1="1.95" y1="2.8" x2="1.95" y2="-2.8" width="0.1524" layer="21"/>
+<wire x1="-1.95" y1="-1.085" x2="-1.95" y2="2.8" width="0.1524" layer="21"/>
+<wire x1="-1.95" y1="2.8" x2="1.95" y2="2.8" width="0.1524" layer="51"/>
+<wire x1="1.95" y1="-2.8" x2="-1.95" y2="-2.8" width="0.1524" layer="51"/>
+<wire x1="-1.95" y1="-2.13" x2="-1.95" y2="-1.085" width="0.1524" layer="21" curve="180"/>
+<wire x1="-1.95" y1="-2.8" x2="-1.95" y2="-2.13" width="0.1524" layer="21"/>
+<wire x1="-1.95" y1="-2.13" x2="-1.95" y2="-1.085" width="0.1524" layer="21"/>
+<smd name="1" x="-1.27" y="-3.15" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="1.27" y="-3.15" dx="0.8" dy="1.2" layer="1"/>
+<smd name="3" x="1.27" y="3.15" dx="0.8" dy="1.2" layer="1" rot="R180"/>
+<smd name="4" x="-1.27" y="3.15" dx="0.8" dy="1.2" layer="1" rot="R180"/>
+<text x="-2.54" y="-3.175" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-3.175" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-3.75" x2="-0.889" y2="-3.2" layer="51"/>
+<rectangle x1="0.889" y1="-3.75" x2="1.651" y2="-3.2" layer="51"/>
+<rectangle x1="0.889" y1="3.235" x2="1.651" y2="3.785" layer="51"/>
+<rectangle x1="-1.651" y1="3.235" x2="-0.889" y2="3.785" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FODM30*">
@@ -17850,6 +17869,24 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </gates>
 <devices>
 <device name="" package="FODM">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="A1" pad="3"/>
+<connect gate="G$1" pin="A2" pad="4"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLP268J">
+<gates>
+<gate name="G$1" symbol="FODM30*" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TLP26*">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="A1" pad="3"/>
@@ -19665,7 +19702,7 @@ Created by Upverter.com</description>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0207/2V" value="4K7"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="0207/2V" value="22K"/>
 <part name="D5" library="diode" deviceset="DIODE-" device="DP41-10V" value="1n4001"/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="0204/7" value="9.1M"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="0207/7" value="9.1M"/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="0207/2V" value="200K"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="0207/2V" value="100K"/>
 <part name="IC3" library="40xx" deviceset="4076" device="N"/>
@@ -19689,7 +19726,7 @@ Created by Upverter.com</description>
 <part name="R14" library="rcl" deviceset="R-EU_" device="0207/2V" value="100K"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C1206K" value="2.2uF"/>
 <part name="R16" library="rcl" deviceset="R-EU_" device="R0402" value="1K"/>
-<part name="R17" library="rcl" deviceset="R-EU_" device="0207/7" value="51K"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="0207/2V" value="51K"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="050-024X044" value="100nF"/>
 <part name="R15" library="pot" deviceset="TRIM_EU-" device="CA6H_MOD" value="220K"/>
 <part name="X4" library="con-wago-500" deviceset="W237-102" device=""/>
@@ -19717,7 +19754,6 @@ Created by Upverter.com</description>
 <part name="R5" library="rcl" deviceset="R-EU_" device="0207/7" value="100R"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="0207/10" value="10K"/>
 <part name="OP3" library="SHoleLib" deviceset="FODM3053" device=""/>
-<part name="OP2" library="SHoleLib" deviceset="FODM3053" device=""/>
 <part name="OP1" library="SHoleLib" deviceset="FODM3053" device=""/>
 <part name="U1" library="InrushTimer" deviceset="ROHM_BY_ELEMENT14_BATCH_1_BU48XXG" device=""/>
 <part name="Q2" library="InrushTimer" deviceset="TRANSISTOR-FET_2N7002" device=""/>
@@ -19730,6 +19766,7 @@ Created by Upverter.com</description>
 <part name="D13" library="diode" deviceset="ZENER-DIODE" device="DO34-7" value="BZX55C5V6"/>
 <part name="D2" library="diode" deviceset="ZENER-DIODE" device="DO34-7" value="BZX55C5V6"/>
 <part name="D3" library="diode" deviceset="DIODE-" device="DO34-7" value="5082-2800"/>
+<part name="U$1" library="SHoleLib" deviceset="TLP268J" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19820,7 +19857,6 @@ Created by Upverter.com</description>
 <instance part="R5" gate="G$1" x="0" y="-78.74" rot="R180"/>
 <instance part="R10" gate="G$1" x="-2.54" y="78.74" rot="R180"/>
 <instance part="OP3" gate="G$1" x="368.3" y="-12.7"/>
-<instance part="OP2" gate="G$1" x="368.3" y="7.62"/>
 <instance part="OP1" gate="G$1" x="368.3" y="33.02"/>
 <instance part="U1" gate="G$1" x="-20.32" y="-81.28"/>
 <instance part="Q2" gate="G$1" x="33.02" y="-76.2"/>
@@ -19833,6 +19869,7 @@ Created by Upverter.com</description>
 <instance part="D13" gate="G$1" x="-83.82" y="-76.2" rot="R90"/>
 <instance part="D2" gate="G$1" x="7.62" y="-88.9" rot="R90"/>
 <instance part="D3" gate="G$1" x="-22.86" y="60.96" rot="R270"/>
+<instance part="U$1" gate="G$1" x="368.3" y="7.62"/>
 </instances>
 <busses>
 </busses>
@@ -19972,7 +20009,7 @@ Created by Upverter.com</description>
 <segment>
 <wire x1="358.14" y1="10.16" x2="332.74" y2="10.16" width="0.1524" layer="91"/>
 <label x="332.74" y="10.16" size="1.778" layer="95"/>
-<pinref part="OP2" gate="G$1" pin="A"/>
+<pinref part="U$1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="ZERO" class="0">
@@ -20518,21 +20555,21 @@ Created by Upverter.com</description>
 <pinref part="R25" gate="G$1" pin="1"/>
 <wire x1="358.14" y1="5.08" x2="353.06" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="5.08" x2="353.06" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="OP2" gate="G$1" pin="C"/>
+<pinref part="U$1" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="X3" gate="-2" pin="KL"/>
 <wire x1="381" y1="10.16" x2="378.46" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="OP2" gate="G$1" pin="A2"/>
+<pinref part="U$1" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="X3" gate="-1" pin="KL"/>
 <wire x1="381" y1="5.08" x2="378.46" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="OP2" gate="G$1" pin="A1"/>
+<pinref part="U$1" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="N$13" class="0">
