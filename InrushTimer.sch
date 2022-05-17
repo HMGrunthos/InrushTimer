@@ -14171,6 +14171,16 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
+<package name="DO41-10VN">
+<wire x1="1.905" y1="0" x2="0.889" y2="0" width="0.762" layer="51"/>
+<wire x1="-1.905" y1="0" x2="-0.889" y2="0" width="0.762" layer="51"/>
+<pad name="A" x="1.905" y="0" drill="1.1176"/>
+<pad name="C" x="-1.905" y="0" drill="1.1176"/>
+<text x="-2.667" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.302" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.381" x2="1.27" y2="0.381" layer="21"/>
+<circle x="1.905" y="0" radius="1.3589" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="D">
@@ -14764,7 +14774,16 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="DP41-10V" package="DO41-10V">
+<device name="DO41-10V" package="DO41-10V">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DO41-10VN" package="DO41-10VN">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -19701,15 +19720,15 @@ Created by Upverter.com</description>
 <part name="C3" library="rcl" deviceset="CPOL-EU" device="E2.5-7" value="100uF"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0207/2V" value="4K7"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="0207/2V" value="22K"/>
-<part name="D5" library="diode" deviceset="DIODE-" device="DP41-10V" value="1n4001"/>
+<part name="D5" library="diode" deviceset="DIODE-" device="DO41-10VN" value="1n4001"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="0207/7" value="9.1M"/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="0207/2V" value="200K"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="0207/2V" value="100K"/>
 <part name="IC3" library="40xx" deviceset="4076" device="N"/>
-<part name="D6" library="diode" deviceset="DIODE-" device="DP41-10V" value="1n4001"/>
+<part name="D6" library="diode" deviceset="DIODE-" device="DO41-7.6" value="1n4001"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="0207/2V" value="200K"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="0207/7" value="27K"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="0207/7" value="51K"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="0207/2V" value="51K"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="0207/2V" value="22K"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0805K" value="10pF (DNF)"/>
@@ -19728,7 +19747,7 @@ Created by Upverter.com</description>
 <part name="R16" library="rcl" deviceset="R-EU_" device="R0402" value="1K"/>
 <part name="R17" library="rcl" deviceset="R-EU_" device="0207/2V" value="51K"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="050-024X044" value="100nF"/>
-<part name="R15" library="pot" deviceset="TRIM_EU-" device="CA6H_MOD" value="220K"/>
+<part name="R15" library="pot" deviceset="TRIM_EU-" device="CA6H" value="220K"/>
 <part name="X4" library="con-wago-500" deviceset="W237-102" device=""/>
 <part name="C11" library="rcl" deviceset="C-EU" device="050-024X044" value="10nF"/>
 <part name="X3" library="con-wago-500" deviceset="W237-102" device=""/>
@@ -19783,13 +19802,13 @@ Created by Upverter.com</description>
 <instance part="D5" gate="G$1" x="-66.04" y="93.98" rot="R90"/>
 <instance part="R9" gate="G$1" x="-38.1" y="45.72" rot="R90"/>
 <instance part="R11" gate="G$1" x="0" y="60.96" rot="R90"/>
-<instance part="R12" gate="G$1" x="0" y="45.72" rot="R270"/>
+<instance part="R12" gate="G$1" x="0" y="45.72" rot="R90"/>
 <instance part="IC3" gate="A" x="223.52" y="-7.62"/>
 <instance part="IC3" gate="P" x="190.5" y="-20.32"/>
 <instance part="D6" gate="G$1" x="-55.88" y="55.88" rot="R90"/>
 <instance part="R13" gate="G$1" x="22.86" y="91.44" rot="R180"/>
 <instance part="R2" gate="G$1" x="-73.66" y="-55.88" rot="R90"/>
-<instance part="R7" gate="G$1" x="35.56" y="-60.96" rot="R270"/>
+<instance part="R7" gate="G$1" x="35.56" y="-60.96" rot="R90"/>
 <instance part="R6" gate="G$1" x="7.62" y="-60.96" rot="R270"/>
 <instance part="R3" gate="G$1" x="-73.66" y="-76.2" rot="R90"/>
 <instance part="C10" gate="G$1" x="45.72" y="58.42"/>
@@ -19806,12 +19825,12 @@ Created by Upverter.com</description>
 <instance part="C4" gate="G$1" x="-63.5" y="-73.66"/>
 <instance part="C6" gate="G$1" x="-35.56" y="68.58" rot="R90"/>
 <instance part="C8" gate="G$1" x="-27.94" y="101.6"/>
-<instance part="R14" gate="G$1" x="86.36" y="-5.08" rot="R180"/>
+<instance part="R14" gate="G$1" x="104.14" y="-5.08" rot="R180"/>
 <instance part="C13" gate="G$1" x="111.76" y="-25.4" rot="R180"/>
 <instance part="R16" gate="G$1" x="127" y="5.08" rot="R90"/>
 <instance part="R17" gate="G$1" x="144.78" y="15.24" rot="R270"/>
 <instance part="C12" gate="G$1" x="78.74" y="-20.32"/>
-<instance part="R15" gate="1" x="101.6" y="-5.08" rot="R90"/>
+<instance part="R15" gate="1" x="88.9" y="-5.08" rot="R270"/>
 <instance part="X4" gate="-1" x="386.08" y="-10.16" rot="R180"/>
 <instance part="X4" gate="-2" x="386.08" y="-15.24" rot="R180"/>
 <instance part="C11" gate="G$1" x="40.64" y="-15.24"/>
@@ -19954,26 +19973,26 @@ Created by Upverter.com</description>
 <segment>
 <label x="-7.62" y="-53.34" size="1.778" layer="95"/>
 <wire x1="35.56" y1="-53.34" x2="7.62" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="-53.34" x2="-7.62" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-55.88" x2="35.56" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="-55.88" x2="7.62" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="7.62" y="-53.34"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="-55.88" x2="35.56" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="78.74" y1="-17.78" x2="78.74" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="0" x2="78.74" y2="0" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="-7.62" x2="78.74" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="78.74" y="-7.62"/>
+<wire x1="78.74" y1="-7.62" x2="78.74" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="-5.08" x2="78.74" y2="0" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="-7.62" x2="17.78" y2="-7.62" width="0.1524" layer="91"/>
 <label x="17.78" y="-6.604" size="1.778" layer="95"/>
-<pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="-5.08" x2="78.74" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="78.74" y="-5.08"/>
 <pinref part="IC2" gate="A" pin="V+"/>
+<pinref part="R15" gate="1" pin="A"/>
+<wire x1="83.82" y1="-5.08" x2="78.74" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="78.74" y="-5.08"/>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
@@ -20097,12 +20116,12 @@ Created by Upverter.com</description>
 <wire x1="-66.04" y1="38.1" x2="-76.2" y2="38.1" width="0.1524" layer="91"/>
 <junction x="-66.04" y="38.1"/>
 <label x="-76.2" y="38.1" size="1.778" layer="95"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="0" y1="40.64" x2="0" y2="38.1" width="0.1524" layer="91"/>
-<junction x="0" y="38.1"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="-66.04" y1="50.8" x2="-66.04" y2="48.26" width="0.1524" layer="91"/>
 <junction x="-66.04" y="48.26"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="0" y1="40.64" x2="0" y2="38.1" width="0.1524" layer="91"/>
+<junction x="0" y="38.1"/>
 </segment>
 <segment>
 <wire x1="144.78" y1="-7.62" x2="144.78" y2="-30.48" width="0.1524" layer="91"/>
@@ -20246,10 +20265,10 @@ Created by Upverter.com</description>
 <label x="50.8" y="-71.12" size="1.778" layer="95" rot="R180"/>
 <wire x1="35.56" y1="-68.58" x2="50.8" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-68.58" x2="35.56" y2="-71.12" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="-68.58" x2="35.56" y2="-66.04" width="0.1524" layer="91"/>
 <junction x="35.56" y="-68.58"/>
-<pinref part="Q2" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="RESET_N" class="0">
@@ -20285,11 +20304,11 @@ Created by Upverter.com</description>
 <wire x1="10.16" y1="73.66" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="-IN"/>
 <wire x1="12.7" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="0" y1="50.8" x2="0" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="0" y1="53.34" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="0" y1="55.88" x2="0" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="0" y1="50.8" x2="0" y2="53.34" width="0.1524" layer="91"/>
 <junction x="0" y="53.34"/>
 </segment>
 </net>
@@ -20344,12 +20363,12 @@ Created by Upverter.com</description>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="10.16" x2="111.76" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="10.16" x2="111.76" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="-5.08" x2="111.76" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="111.76" y="-5.08"/>
-<pinref part="R15" gate="1" pin="A"/>
-<wire x1="111.76" y1="-5.08" x2="106.68" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="A" pin="THR"/>
 <pinref part="IC2" gate="A" pin="DIS"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="-5.08" x2="111.76" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-5.08" x2="111.76" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="111.76" y="-5.08"/>
 </segment>
 </net>
 <net name="ON_B" class="0">
@@ -20484,19 +20503,6 @@ Created by Upverter.com</description>
 <junction x="254" y="20.32"/>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="254" y1="0" x2="248.92" y2="0" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R15" gate="1" pin="S"/>
-<wire x1="101.6" y1="0" x2="101.6" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="2.54" x2="93.98" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="2.54" x2="93.98" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="R15" gate="1" pin="E"/>
-<wire x1="93.98" y1="-5.08" x2="96.52" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="-5.08" x2="91.44" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="93.98" y="-5.08"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -20660,6 +20666,19 @@ Created by Upverter.com</description>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="10.16" y1="78.74" x2="2.54" y2="78.74" width="0.1524" layer="91"/>
 <junction x="10.16" y="78.74"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R15" gate="1" pin="E"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="-5.08" x2="96.52" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="R15" gate="1" pin="S"/>
+<wire x1="96.52" y1="-5.08" x2="99.06" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-10.16" x2="88.9" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-12.7" x2="96.52" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-12.7" x2="96.52" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="96.52" y="-5.08"/>
 </segment>
 </net>
 </nets>
