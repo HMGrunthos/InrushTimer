@@ -10,12 +10,6 @@ AutoSaveProject=1
 UsedLibrary="InrushTimer.lbr"
 
 [Win_1]
-Type="Control Panel"
-Loc="1320 415 1919 814"
-State=2
-Number=0
-
-[Win_2]
 Type="Schematic Editor"
 Loc="1923 392 2522 791"
 State=1
@@ -63,9 +57,9 @@ Layer=91
 Views=" 1: -105.261 -90.4504 0.521703 -45.6196"
 Sheet="1"
 
-[Win_3]
+[Win_2]
 Type="Board Editor"
-Loc="0 0 599 399"
+Loc="0 32 599 431"
 State=1
 Number=2
 File="InrushTimer.brd"
@@ -108,6 +102,12 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=16
+
+[Win_3]
+Type="Control Panel"
+Loc="1320 415 1919 814"
+State=2
+Number=0
 
 [Desktop]
 Screen="2560 1440"
