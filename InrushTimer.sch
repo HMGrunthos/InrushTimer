@@ -16,7 +16,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="no"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
 <layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="no"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="no"/>
@@ -14181,6 +14181,37 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <rectangle x1="-1.27" y1="-0.381" x2="1.27" y2="0.381" layer="21"/>
 <circle x="1.905" y="0" radius="1.3589" width="0.127" layer="21"/>
 </package>
+<package name="CB417-15">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 3.5 mm, horizontal, grid 15.24 mm</description>
+<wire x1="-4.572" y1="-1.778" x2="-4.572" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="4.572" y1="1.778" x2="-4.572" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="4.572" y1="1.778" x2="4.572" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="-4.572" y1="-1.778" x2="4.572" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="0" x2="6.35" y2="0" width="1.1176" layer="51"/>
+<wire x1="-7.62" y1="0" x2="-6.35" y2="0" width="1.1176" layer="51"/>
+<pad name="C" x="-7.62" y="0" drill="1.397" shape="long"/>
+<pad name="A" x="7.62" y="0" drill="1.397" shape="long"/>
+<text x="-4.572" y="2.159" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.794" y="-1.397" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.81" y1="-1.778" x2="-3.302" y2="1.778" layer="21"/>
+<rectangle x1="4.572" y1="-0.5334" x2="6.223" y2="0.5334" layer="21"/>
+<rectangle x1="-6.223" y1="-0.5334" x2="-4.572" y2="0.5334" layer="21"/>
+</package>
+<package name="DO15-10">
+<wire x1="-3.81" y1="-1.778" x2="3.81" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.778" x2="-3.81" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.778" x2="3.81" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.778" x2="-3.81" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0" x2="4.064" y2="0" width="0.762" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-4.064" y2="0" width="0.762" layer="51"/>
+<pad name="C" x="-5.08" y="0" drill="1.1176" diameter="2.54"/>
+<pad name="A" x="5.08" y="0" drill="1.1176" diameter="2.54"/>
+<text x="-3.683" y="2.159" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.159" y="-1.397" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-4.2545" y1="-0.381" x2="-3.81" y2="0.381" layer="21"/>
+<rectangle x1="3.81" y1="-0.381" x2="3.937" y2="0.381" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="D">
@@ -14207,6 +14238,26 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <text x="-1.778" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="SCHOTTKY-BIDIR">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-1.27" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.27" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -15020,6 +15071,33 @@ high speed (Philips)</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P6KEXXC" prefix="D">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+transient-voltage suppressor</description>
+<gates>
+<gate name="1" symbol="SCHOTTKY-BIDIR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CB417-15">
+<connects>
+<connect gate="1" pin="1" pad="A"/>
+<connect gate="1" pin="2" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TS-P6KE" package="DO15-10">
+<connects>
+<connect gate="1" pin="1" pad="A"/>
+<connect gate="1" pin="2" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19616,83 +19694,71 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Diodes - ZTX451">
-<description>Upverter Parts Library
-
-Created by Upverter.com</description>
+<library name="transistor-power">
+<description>&lt;b&gt;Power Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="DIODES_ZTX451_0">
-<description>Trans GP BJT NPN 60V 1A 3-Pin E-Line</description>
-<wire x1="-2.385" y1="-1.205" x2="-2.385" y2="1.205" width="0.15" layer="51"/>
-<wire x1="-2.385" y1="1.205" x2="2.385" y2="1.205" width="0.15" layer="51"/>
-<wire x1="2.385" y1="1.205" x2="2.385" y2="-1.205" width="0.15" layer="51"/>
-<wire x1="2.385" y1="-1.205" x2="-2.385" y2="-1.205" width="0.15" layer="51"/>
-<wire x1="-2.485" y1="-1.97" x2="-2.485" y2="1.305" width="0.1" layer="39"/>
-<wire x1="-2.485" y1="1.305" x2="2.485" y2="1.305" width="0.1" layer="39"/>
-<wire x1="2.485" y1="1.305" x2="2.485" y2="-1.97" width="0.1" layer="39"/>
-<wire x1="2.485" y1="-1.97" x2="-2.485" y2="-1.97" width="0.1" layer="39"/>
-<wire x1="-2.385" y1="1.205" x2="2.385" y2="1.205" width="0.15" layer="21"/>
-<wire x1="2.385" y1="-1.205" x2="2.385" y2="1.205" width="0.15" layer="21"/>
-<wire x1="-2.385" y1="-1.205" x2="-0.975" y2="-1.205" width="0.15" layer="21"/>
-<wire x1="0.975" y1="-1.205" x2="2.385" y2="-1.205" width="0.15" layer="21"/>
-<wire x1="-2.385" y1="-1.205" x2="-2.385" y2="1.205" width="0.15" layer="21"/>
-<text x="-2.61" y="1.515" size="1" layer="25">&gt;NAME</text>
-<pad name="1" x="1.27" y="0" drill="0.7" diameter="1.2"/>
-<pad name="2" x="0" y="-1.27" drill="0.7" diameter="1.2"/>
-<pad name="3" x="-1.27" y="0" drill="0.7" diameter="1.2"/>
+<package name="TO220AV">
+<description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
+grid 2.54 mm</description>
+<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.1524" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.1524" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.1524" layer="21"/>
+<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.1524" layer="21"/>
+<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.1524" layer="21"/>
+<circle x="-4.4958" y="-3.7084" radius="0.254" width="0.1524" layer="21"/>
+<pad name="B" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="C" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="E" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<text x="-5.08" y="-6.0452" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-5.334" y1="-0.762" x2="5.334" y2="0" layer="21"/>
+<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.762" layer="21"/>
+<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.762" layer="21"/>
+<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.762" layer="51"/>
+<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
+<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.762" layer="21"/>
+<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
+<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
 </package>
 </packages>
 <symbols>
-<symbol name="DIODES_ZTX451_0_0">
-<description>Trans GP BJT NPN 60V 1A 3-Pin E-Line</description>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="-10.16" width="0.508" layer="94"/>
-<wire x1="3.556" y1="-9.906" x2="5.08" y2="-10.16" width="0.508" layer="94"/>
-<wire x1="4.064" y1="-9.144" x2="5.08" y2="-10.16" width="0.508" layer="94"/>
-<wire x1="3.556" y1="-9.906" x2="4.064" y2="-9.144" width="0.508" layer="94"/>
-<wire x1="2.54" y1="-6.35" x2="5.08" y2="-5.08" width="0.508" layer="94"/>
-<wire x1="2.54" y1="-8.89" x2="5.08" y2="-10.16" width="0.508" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="2.54" y2="-7.62" width="0.15" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.15" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="5.08" y2="-10.16" width="0.15" layer="94"/>
-<text x="7.62" y="-5.08" size="2.54" layer="95" align="top-left">&gt;NAME</text>
-<text x="7.62" y="-7.62" size="2.54" layer="95" align="top-left">ZTX451</text>
-<pin name="B" x="-2.54" y="-7.62" visible="pad" length="middle"/>
-<pin name="C" x="5.08" y="0" visible="pad" length="middle" rot="R270"/>
-<pin name="E" x="5.08" y="-15.24" visible="pad" length="middle" rot="R90"/>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="1.651" y2="-1.651" width="0.1524" layer="94"/>
+<wire x1="2.159" y1="-2.159" x2="2.286" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.016" x2="2.286" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-2.286" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-2.286" x2="1.016" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.778" x2="1.778" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.159" y1="-2.159" x2="1.778" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.27" x2="1.27" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.778" x2="2.159" y2="-2.159" width="0.254" layer="94"/>
+<wire x1="2.159" y1="-2.159" x2="1.651" y2="-1.651" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-1.778" x2="1.778" y2="-1.524" width="0.254" layer="94"/>
+<text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.381" y1="-2.54" x2="0.381" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DIODES_ZTX451" prefix="Q">
-<description>Trans GP BJT NPN 60V 1A 3-Pin E-Line</description>
+<deviceset name="TIP41C" prefix="Q">
+<description>&lt;b&gt;NPN TRANSISTOR&lt;/b&gt;</description>
 <gates>
-<gate name="G$0" symbol="DIODES_ZTX451_0_0" x="0" y="0"/>
+<gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="DIODES_ZTX451_0_0" package="DIODES_ZTX451_0">
+<device name="" package="TO220AV">
 <connects>
-<connect gate="G$0" pin="B" pad="2"/>
-<connect gate="G$0" pin="C" pad="3"/>
-<connect gate="G$0" pin="E" pad="1"/>
+<connect gate="1" pin="B" pad="B"/>
+<connect gate="1" pin="C" pad="C"/>
+<connect gate="1" pin="E" pad="E"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="CENTROID_NOT_SPECIFIED" value="No"/>
-<attribute name="DATASHEET" value="https://www.diodes.com/assets/Datasheets/ZTX450.pdf"/>
-<attribute name="DIGIKEY_DESCRIPTION" value="TRANS NPN 60V 1A E-LINE"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="ZTX451-ND"/>
-<attribute name="LEAD_FREE" value="yes"/>
-<attribute name="MF" value="Diodes"/>
-<attribute name="MFG_PACKAGE_IDENT" value="E-LINE"/>
-<attribute name="MFG_PACKAGE_IDENT_DATE" value="2017-03-08"/>
-<attribute name="MFG_PACKAGE_IDENT_REV" value="2017-03-08"/>
-<attribute name="MOUSER_PART_NUMBER" value="522-ZTX451"/>
-<attribute name="MPN" value="ZTX451"/>
-<attribute name="PACKAGE" value="E-LINE"/>
-<attribute name="PREFIX" value="Q"/>
-<attribute name="ROHS" value="yes"/>
-<attribute name="TEMPERATURE_RANGE_HIGH" value="+200°C"/>
-<attribute name="TEMPERATURE_RANGE_LOW" value="-55°C"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -19728,7 +19794,7 @@ Created by Upverter.com</description>
 <part name="D6" library="diode" deviceset="DIODE-" device="DO41-7.6" value="1n4001"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="0207/2V" value="200K"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="0207/7" value="27K"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="0207/2V" value="51K"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="0207/7" value="51K"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="0207/7" value="22K"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0805K" value="10pF (DNF)"/>
@@ -19781,11 +19847,12 @@ Created by Upverter.com</description>
 <part name="Q5" library="InrushTimer" deviceset="TRANSISTOR-FET_2N7002" device=""/>
 <part name="C16" library="rcl" deviceset="C-EU" device="C1206K" value="100nF (DNF)"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="C1206K" value="100nF (DNF)"/>
-<part name="Q6" library="Diodes - ZTX451" deviceset="DIODES_ZTX451" device="DIODES_ZTX451_0_0"/>
 <part name="D13" library="diode" deviceset="ZENER-DIODE" device="DO34-7" value="BZX55C5V6"/>
 <part name="D2" library="diode" deviceset="ZENER-DIODE" device="DO34-7" value="BZX55C5V6"/>
 <part name="D3" library="diode" deviceset="DIODE-" device="DO34-7" value="5082-2800"/>
 <part name="U$1" library="SHoleLib" deviceset="TLP268J" device=""/>
+<part name="D14" library="diode" deviceset="P6KEXXC" device="TS-P6KE" value="P6KEXXCTS-P6KE"/>
+<part name="Q1" library="transistor-power" deviceset="TIP41C" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19801,14 +19868,14 @@ Created by Upverter.com</description>
 <instance part="R8" gate="G$1" x="-66.04" y="55.88" rot="R90"/>
 <instance part="D5" gate="G$1" x="-66.04" y="93.98" rot="R90"/>
 <instance part="R9" gate="G$1" x="-38.1" y="45.72" rot="R90"/>
-<instance part="R11" gate="G$1" x="0" y="60.96" rot="R90"/>
+<instance part="R11" gate="G$1" x="0" y="60.96" rot="R270"/>
 <instance part="R12" gate="G$1" x="0" y="45.72" rot="R90"/>
 <instance part="IC3" gate="A" x="223.52" y="-7.62"/>
 <instance part="IC3" gate="P" x="190.5" y="-20.32"/>
 <instance part="D6" gate="G$1" x="-55.88" y="55.88" rot="R90"/>
 <instance part="R13" gate="G$1" x="22.86" y="91.44" rot="R180"/>
 <instance part="R2" gate="G$1" x="-73.66" y="-55.88" rot="R90"/>
-<instance part="R7" gate="G$1" x="35.56" y="-60.96" rot="R90"/>
+<instance part="R7" gate="G$1" x="35.56" y="-60.96" rot="R270"/>
 <instance part="R6" gate="G$1" x="7.62" y="-60.96" rot="R90"/>
 <instance part="R3" gate="G$1" x="-73.66" y="-76.2" rot="R90"/>
 <instance part="C10" gate="G$1" x="45.72" y="58.42"/>
@@ -19884,11 +19951,12 @@ Created by Upverter.com</description>
 <instance part="Q5" gate="G$1" x="325.12" y="-22.86"/>
 <instance part="C16" gate="G$1" x="276.86" y="-15.24"/>
 <instance part="C15" gate="G$1" x="269.24" y="-17.78" rot="R180"/>
-<instance part="Q6" gate="G$0" x="-83.82" y="2.54"/>
 <instance part="D13" gate="G$1" x="-83.82" y="-76.2" rot="R90"/>
 <instance part="D2" gate="G$1" x="7.62" y="-88.9" rot="R90"/>
 <instance part="D3" gate="G$1" x="-22.86" y="60.96" rot="R270"/>
 <instance part="U$1" gate="G$1" x="368.3" y="7.62"/>
+<instance part="D14" gate="1" x="-53.34" y="-20.32" rot="R90"/>
+<instance part="Q1" gate="1" x="-81.28" y="-5.08"/>
 </instances>
 <busses>
 </busses>
@@ -19904,12 +19972,12 @@ Created by Upverter.com</description>
 <wire x1="-78.74" y1="10.16" x2="-58.42" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-119.38" y1="10.16" x2="-109.22" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-109.22" y="10.16"/>
-<pinref part="Q6" gate="G$0" pin="C"/>
-<wire x1="-78.74" y1="2.54" x2="-78.74" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="0" x2="-78.74" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-78.74" y="10.16"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-99.06" y1="7.62" x2="-99.06" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-99.06" y="10.16"/>
+<pinref part="Q1" gate="1" pin="C"/>
 </segment>
 <segment>
 <label x="-96.52" y="-45.72" size="1.778" layer="95"/>
@@ -19925,26 +19993,30 @@ Created by Upverter.com</description>
 <net name="N$8" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="Q6" gate="G$0" pin="B"/>
 <wire x1="-99.06" y1="-5.08" x2="-99.06" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="-5.08" x2="-99.06" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-86.36" y1="-12.7" x2="-86.36" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="-86.36" y="-5.08"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="-99.06" y1="-2.54" x2="-99.06" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-99.06" y="-5.08"/>
+<pinref part="Q1" gate="1" pin="B"/>
+<wire x1="-83.82" y1="-5.08" x2="-86.36" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="-86.36" y="-5.08"/>
 </segment>
 </net>
 <net name="V12" class="0">
 <segment>
 <wire x1="-78.74" y1="-12.7" x2="-73.66" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="-12.7" x2="-58.42" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-12.7" x2="-53.34" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="-12.7" x2="-73.66" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="-73.66" y="-12.7"/>
 <label x="-68.072" y="-11.684" size="1.778" layer="95"/>
 <pinref part="C3" gate="G$1" pin="+"/>
-<pinref part="Q6" gate="G$0" pin="E"/>
+<pinref part="D14" gate="1" pin="2"/>
+<wire x1="-53.34" y1="-12.7" x2="-53.34" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="1" pin="E"/>
+<wire x1="-78.74" y1="-10.16" x2="-78.74" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="P" pin="VDD"/>
@@ -19973,12 +20045,12 @@ Created by Upverter.com</description>
 <segment>
 <label x="-7.62" y="-53.34" size="1.778" layer="95"/>
 <wire x1="35.56" y1="-53.34" x2="7.62" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="-53.34" x2="-7.62" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-55.88" x2="35.56" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="-55.88" x2="7.62" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="7.62" y="-53.34"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="-55.88" x2="35.56" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="78.74" y1="-17.78" x2="78.74" y2="-7.62" width="0.1524" layer="91"/>
@@ -20005,7 +20077,7 @@ Created by Upverter.com</description>
 <segment>
 <label x="-10.16" y="68.58" size="1.778" layer="95"/>
 <wire x1="0" y1="68.58" x2="-10.16" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="0" y1="66.04" x2="0" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -20044,7 +20116,7 @@ Created by Upverter.com</description>
 <wire x1="-73.66" y1="-25.4" x2="-86.36" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="-99.06" y="-25.4"/>
 <wire x1="-86.36" y1="-25.4" x2="-99.06" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="-25.4" x2="-58.42" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-25.4" x2="-53.34" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="-73.66" y="-25.4"/>
 <label x="-58.166" y="-26.416" size="1.778" layer="95" rot="R180"/>
 <pinref part="C1" gate="G$1" pin="-"/>
@@ -20055,6 +20127,8 @@ Created by Upverter.com</description>
 <pinref part="X1" gate="-3" pin="KL"/>
 <wire x1="-119.38" y1="-25.4" x2="-109.22" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="-109.22" y="-25.4"/>
+<pinref part="D14" gate="1" pin="1"/>
+<wire x1="-53.34" y1="-22.86" x2="-53.34" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-38.1" y1="93.98" x2="-38.1" y2="91.44" width="0.1524" layer="91"/>
@@ -20255,8 +20329,8 @@ Created by Upverter.com</description>
 <wire x1="35.56" y1="-68.58" x2="50.8" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-68.58" x2="35.56" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="-68.58" x2="35.56" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="-66.04" x2="35.56" y2="-68.58" width="0.1524" layer="91"/>
 <junction x="35.56" y="-68.58"/>
 </segment>
 </net>
@@ -20294,10 +20368,10 @@ Created by Upverter.com</description>
 <pinref part="IC1" gate="A" pin="-IN"/>
 <wire x1="12.7" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="0" y1="53.34" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="0" y1="55.88" x2="0" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="0" y1="50.8" x2="0" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="0" y1="55.88" x2="0" y2="53.34" width="0.1524" layer="91"/>
 <junction x="0" y="53.34"/>
 </segment>
 </net>
