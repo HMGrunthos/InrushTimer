@@ -19868,7 +19868,7 @@ grid 2.54 mm</description>
 <part name="D13" library="diode" deviceset="ZENER-DIODE" device="DO34-7" value="BZX55C5V6"/>
 <part name="D2" library="diode" deviceset="ZENER-DIODE" device="DO34-7" value="BZX55C5V6"/>
 <part name="D3" library="diode" deviceset="DIODE-" device="DO34-7" value="5082-2800"/>
-<part name="U$1" library="SHoleLib" deviceset="TLP268J" device=""/>
+<part name="OP2" library="SHoleLib" deviceset="TLP268J" device=""/>
 <part name="D14" library="diode" deviceset="P6KEXXC" device="DO15-10V" value="P6KEXXCDO15-10V"/>
 <part name="Q1" library="transistor-power" deviceset="TIP41C" device=""/>
 </parts>
@@ -19972,7 +19972,7 @@ grid 2.54 mm</description>
 <instance part="D13" gate="G$1" x="-83.82" y="-76.2" rot="R90"/>
 <instance part="D2" gate="G$1" x="7.62" y="-88.9" rot="R90"/>
 <instance part="D3" gate="G$1" x="-22.86" y="60.96" rot="R270"/>
-<instance part="U$1" gate="G$1" x="368.3" y="7.62"/>
+<instance part="OP2" gate="G$1" x="368.3" y="7.62"/>
 <instance part="D14" gate="1" x="-53.34" y="-17.78" rot="R270"/>
 <instance part="Q1" gate="1" x="-81.28" y="-5.08"/>
 </instances>
@@ -20116,7 +20116,7 @@ grid 2.54 mm</description>
 <segment>
 <wire x1="358.14" y1="10.16" x2="332.74" y2="10.16" width="0.1524" layer="91"/>
 <label x="332.74" y="10.16" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="A"/>
+<pinref part="OP2" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="210.82" y1="2.54" x2="185.42" y2="2.54" width="0.1524" layer="91"/>
@@ -20626,7 +20626,7 @@ grid 2.54 mm</description>
 <net name="N$17" class="0">
 <segment>
 <wire x1="358.14" y1="5.08" x2="353.06" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="C"/>
+<pinref part="OP2" gate="G$1" pin="C"/>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="353.06" y1="2.54" x2="353.06" y2="5.08" width="0.1524" layer="91"/>
 </segment>
@@ -20754,14 +20754,14 @@ grid 2.54 mm</description>
 <net name="N$20" class="0">
 <segment>
 <pinref part="X3" gate="-1" pin="KL"/>
-<pinref part="U$1" gate="G$1" pin="A2"/>
+<pinref part="OP2" gate="G$1" pin="A2"/>
 <wire x1="381" y1="10.16" x2="378.46" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="X3" gate="-2" pin="KL"/>
-<pinref part="U$1" gate="G$1" pin="A1"/>
+<pinref part="OP2" gate="G$1" pin="A1"/>
 <wire x1="381" y1="5.08" x2="378.46" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
