@@ -5857,9 +5857,9 @@ R 1 4 0.027
 RA 4 5 1E5
 RC 5 9 1E10
 RK 9 3 140
-DA 4 5 DA IC=OFF
+DA 4 5 DA; IC=OFF
 * * * CURRENT SENSORS * * *
-DA1 4 6 DA1 IC=OFF
+DA1 4 6 DA1; IC=OFF
 .MODEL DA1 D(
 +         IS = 1.32E-15
 +         RS = 0
@@ -5882,7 +5882,7 @@ VK 7 3 0
 *-------------------------------------------------
 DC 9 5 DC
 FC 5 9 POLY(2) VA VK 0 0.95 1
-DK 9 7 DK IC=OFF
+DK 9 7 DK; IC=OFF
 CK 9 3 1.5E-9
 * * * AMPLIFYING GATE * * *
 DAG 2 9 DAG
@@ -6003,9 +6003,9 @@ R 1 4 0.030
 RA 4 5 1E5
 RC 5 9 1E10
 RK 9 3 160
-DA 4 5 DA IC=OFF
+DA 4 5 DA; IC=OFF
 * * * CURRENT SENSORS * * *
-DA1 4 6 DA1 IC=OFF
+DA1 4 6 DA1; IC=OFF
 *.MODEL DA1 D(IS=1.37E-15)
 .MODEL DA1 D(
 +         IS = 1.32E-15
@@ -6029,7 +6029,7 @@ VK 7 3 0
 *-------------------------------------------------
 DC 9 5 DC
 FC 5 9 POLY(2) VA VK 0 0.95 1
-DK 9 7 DK IC=OFF
+DK 9 7 DK; IC=OFF
 CK 9 3 1.5E-9
 * * * AMPLIFYING GATE * * *
 DAG 2 9 DAG
@@ -6114,9 +6114,9 @@ R 1 4 0.035
 RA 4 5 1E5
 RC 5 9 1E10
 RK 9 3 160
-DA 4 5 DA IC=OFF
+DA 4 5 DA; IC=OFF
 * * * CURRENT SENSORS * * *
-DA1 4 6 DA1 IC=OFF
+DA1 4 6 DA1; IC=OFF
 .MODEL DA1 D(
 +         IS = 1.32E-15
 +         RS = 0
@@ -6139,7 +6139,7 @@ VK 7 3 0
 *-------------------------------------------------
 DC 9 5 DC
 FC 5 9 POLY(2) VA VK 0 0.95 1
-DK 9 7 DK IC=OFF
+DK 9 7 DK; IC=OFF
 CK 9 3 1.5E-9
 * * * AMPLIFYING GATE * * *
 DAG 2 9 DAG
